@@ -1,3 +1,40 @@
-.works {
+.pl {
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pl-texts {
+    width: 50%;
+}
+
+.pl-desc {
+    margin: 20px 0px;
+}
+
+.pl-list {
     background-color: lightgray;
+    border: 2px solid rgb(243, 242, 242);
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100vh;
+    
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+}
+
+.names {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }

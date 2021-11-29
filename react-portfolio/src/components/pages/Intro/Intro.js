@@ -1,5 +1,5 @@
 import './Intro.css'
-import Me from '../../images/Me.jpg'
+import Me from '../../../images/Me.jpg'
 
 export default function intro() {
     return (
@@ -25,24 +25,6 @@ export default function intro() {
                         dhgjkahgkjdhgakh
                     </p>
                 </div>
-                <svg
-                    width="75"
-                    height="75"
-                    viewBox="0 0 75 75"
-                    fill="none"
-                    stroke="black"
-                    className="i-scroll"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <g id="scroll">
-                        <path>
-                            id="Vector"  
-                            d="M40.5 15L34.5 9L28.5 15" 
-                            stroke-width="3"
-                        </path>
-                    </g>
-                    
-                </svg>    
             </div>
             <div className="i-right">
                 <div className="i-bg"></div>
