@@ -11,10 +11,11 @@ export default function intro() {
                     <div className="i-title">
                         <div className="i-title-wrapper">
                             <div className="i-title-item">Full Stack Web Developer</div>
-                            <div className="i-title-item">Full Stack Web Developer</div>
-                            <div className="i-title-item">Full Stack Web Developer</div>
-                            <div className="i-title-item">Full Stack Web Developer</div>
-                            <div className="i-title-item">Full Stack Web Developer</div>
+                            <div className="i-title-item">M.E.R.N STACK</div>
+                            <div className="i-title-item">MONGO DB</div>
+                            <div className="i-title-item">EXPRESS</div>
+                            <div className="i-title-item">REACT</div>
+                            <div className="i-title-item">NODE.JS</div>
                         </div>
                     </div>
                     <p className="i-desc">
