@@ -1,52 +1,128 @@
 import "./Works.css"
-import Product from "../../product/Product"
-import {products} from "../../../data"
+
+import img1 from '../../../images/img1.png'
+import img2 from '../../../images/img2.png'
+import img3 from '../../../images/img3.png'
+import img4 from '../../../images/img4.png'
+import img5 from '../../../images/img5.png'
+import img6 from '../../../images/img6.png'
+
+
 
 export default function Works() {
     return (
-        <div className="pl" >
-            <div className="pl-texts">
-                <h1 className="pl-title">Create & inspire. Its Lama</h1>
-                <p className="pl-desc">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
-                with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>    
+        <>
+            <h1>Projects</h1>
+                <div className="Card-Group">
+
+                <div className="card-container">
+                    <div className="image-container">
+                        <img src={img1} />
+                    </div>
+                    <div className="card-content">
+                        <div className="card-title">
+                            <h5>Online/Offline Budget Tracker</h5>
+                        </div>
+                        <div className="card-text">
+                            <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div className="card-body">
+                            <a href="https://github.com/Djenkins88/Online-Offline-Budget-Tracker">GitHub Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="card-container">
+                    <div className="image-container">
+                        <img src={img2} />
+                    </div>
+                    <div className="card-content">
+                        <div className="card-title">
+                            <h5>Workout Tracker</h5>
+                        </div>
+                        <div className="card-text">
+                            <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div className="card-body">
+                            <a href="https://github.com/Djenkins88/Personal-Workout-Tracker">GitHub Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="card-container">
+                    <div className="image-container">
+                        <img src={img3} />
+                    </div>
+                    <div className="card-content">
+                        <div className="card-title">
+                            <h5>Note Taker</h5>
+                        </div>
+                        <div className="card-text">
+                            <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div className="card-body">
+                            <a href="https://github.com/Djenkins88/Project-Note-Taker">GitHub Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="card-container">
+                    <div className="image-container">
+                        <img src={img4} />
+                    </div>
+                    <div className="card-content">
+                        <div className="card-title">
+                            <h5>Tech Blog</h5>
+                        </div>
+                        <div className="card-text">
+                            <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div className="card-body">
+                            <a href="https://github.com/Djenkins88/Tech-Blog">GitHub Link</a>
+                        </div>
+                    </div>
+                </div> 
+
+                <div className="card-container">
+                    <div className="image-container">
+                        <img src={img5} />
+                    </div>
+                    <div className="card-content">
+                        <div className="card-title">
+                            <h5>Weather Forecast</h5>
+                        </div>
+                        <div className="card-text">
+                            <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div className="card-body">
+                            <a href="https://github.com/Djenkins88/Weather-Forecast">GitHub Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="card-container">
+                    <div className="image-container">
+                        <img src={img6} />
+                    </div>
+                    <div className="card-content">
+                        <div className="card-title">
+                            <h5>Work Day Schedular</h5>
+                        </div>
+                        <div className="card-text">
+                            <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div className="card-body">
+                            <a href="https://github.com/Djenkins88/Work-Day-Scheduler">Github Link</a>
+                        </div>
+                    </div>
+                </div> 
             </div>
-            <div className="pl-list">
-                <div className="card">
-                    <h1>Card</h1>
-                    <div className="card">1</div>
-                </div>
-                <div className="card">
-                    <h1>Card</h1>
-                    <div className="card">2</div>
-                </div>
-                <div className="card">
-                    <h1>Card</h1>
-                    <div className="card">3</div>
-                </div>
-                <div className="card">
-                    <h1>Card</h1>
-                    <div className="card">4</div>
-                </div>
-                <div className="card">
-                    <h1>Card</h1>
-                    <div className="card">5</div>
-                </div>
-                <div className="card">
-                    <h1>Card</h1>
-                    <div className="card">6</div>
-                </div>
-            </div>
-            <div className="names">
-            {products.map((item) => (
-                <Product img={item.img} descrition={item.description} key={item.id} />
-            ))}
-            </div>
-        </div>
+            </> 
+
+
+            
+        
     )
 }
+
+
