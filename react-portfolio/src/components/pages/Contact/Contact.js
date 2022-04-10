@@ -7,15 +7,15 @@ import emailjs from "emailjs-com";
 
 
 export default function Contact() {
-    const formRef = useRef();
+    const form = useRef();
     const [done, setDone] = useState(false);
 
-    const handleSubmit = (e) => {
+    const sendEmail = (e) => {
         e.preventDefault()
         console.log(e)
         emailjs
             .sendForm(
-                'service_t75b9ze', 'template_0oxhbeb', formRef.current, 'user_4qOElY0uDoLkLCTXYy0ww')
+                'service_t75b9ze', 'template_0oxhbeb', e.target, 'user_4qOElY0uDoLkLCTXYy0ww')
             .then((result) => {
                 console.log(result.text);
                 setDone(true)
@@ -23,6 +23,7 @@ export default function Contact() {
             (error) => {
                 console.log(error.text);
             });
+            e.target.reset()
             
     };
     
@@ -50,7 +51,7 @@ export default function Contact() {
                 </div>
                 <div className="c-right">
                     <p className="c-desc"> If you have any questions you can reach me here by GitHub or Email.</p>
-                    <form ref={formRef} onSubmit={handleSubmit}>
+                    <form ref={form} onSubmit={sendEmail}>
                         <input type="text" placeholder="Name" name="user_name" />
                         <input type="text" placeholder="Subject" name="user_subject" />
                         <input type="text" placeholder="Email" name="user_email" />
