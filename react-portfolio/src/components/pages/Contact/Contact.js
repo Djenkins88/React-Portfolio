@@ -15,19 +15,15 @@ export default function Contact() {
         console.log(e)
         emailjs
             .sendForm(
-                'service_t75b9ze', 
-                'template_0oxhbeb', 
-                formRef.current, 
-                'user_4qOElY0uDoLkLCTXYy0ww'
-            )
-            .then(
-                (result) => {
+                'service_t75b9ze', 'template_0oxhbeb', formRef.current, 'user_4qOElY0uDoLkLCTXYy0ww')
+            .then((result) => {
                 console.log(result.text);
                 setDone(true)
             }, 
             (error) => {
                 console.log(error.text);
             });
+            
     };
     
 
@@ -53,14 +49,7 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className="c-right">
-                    <p className="c-desc">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    It has survived not only five centuries, but also the leap into electronic typesetting, 
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
+                    <p className="c-desc"> If you have any questions you can reach me here by GitHub or Email.</p>
                     <form ref={formRef} onSubmit={handleSubmit}>
                         <input type="text" placeholder="Name" name="user_name" />
                         <input type="text" placeholder="Subject" name="user_subject" />
